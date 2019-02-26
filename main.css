@@ -1,0 +1,71 @@
+/* Bootstrap navbar */
+* {
+    font-family: adobe-caslon-pro, serif;
+    color: #2E2E2E;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+li .active {
+    border-bottom: 2px solid #119EAC; 
+}
+
+#navbar {
+    color: #2E2E2E;
+}
+
+#navbar a {
+    color: #2E2E2E;
+}
+
+#navbar a:hover {
+    background-color: white;
+    color: #6c757d;
+}
+
+.slideshow-category {
+    font-family: Source Sans Pro;
+    color: #119EAC;
+    line-height: 0.6;
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.slideshow-title {
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.carousel-caption {
+    padding: 20px;
+    padding-bottom: 15px;
+    left: 0;
+    right: auto;
+    background: rgba(18, 18, 18, 0.7);
+}
+
+.home-post-category {
+    font-family: source sans pro;
+    font-weight: bold;
+    font-size: smaller;
+    color: #119EAC;
+}
+.home-post-date { 
+    font-size: smaller;
+}
+
+.instagram-icon {
+    max-height: 1.5rem;
+}
+
+footer {
+    background-color: #2e2e2e;
+}
+
+footer li {
+    color: white;
+    list-style: none;
+}
