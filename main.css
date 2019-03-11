@@ -62,8 +62,17 @@ li .active {
     font-size: smaller;
     color: var(--color-theme);
 }
+
 .home-post-date { 
     font-size: smaller;
+}
+
+#recent-posts {
+    background: white;
+}
+
+#top-posts {
+    background: #eff1f4;
 }
 
 /* Social footer */
@@ -72,8 +81,8 @@ li .active {
     vertical-align: text-top;
 }
 
-#instagram-container {
-    background: whitesmoke;
+#social-footer {
+    background: #eaecef;
 }
 
 #email-input {
@@ -105,7 +114,6 @@ footer h4, footer h5, footer h6, footer p {
 }
 
 footer .d-md-block h4 {
-    /* font-size: larger; */
     color: var(--color-theme);
     margin-bottom: 1.2rem;
 }
