@@ -1,40 +1,48 @@
-/* Bootstrap navbar */
-* {
-    font-family: adobe-caslon-pro, serif;
-    color: #2E2E2E;
+:root {
+    --serif-font: 'adobe-caslon-pro', sans-serif;
+    --sans-font: 'Source Sans Pro', sans-serif;
+    --color-theme: #119EAC;
+    --color-text-dark: #2E2E2E;
 }
 
+* {
+    font-family: var(--serif-font);
+    color: var(--color-text-dark);
+}
+
+/* Navbar */
 .navbar-brand {
     font-size: 2rem;
 }
 
 li .active {
-    border-bottom: 2px solid #119EAC; 
+    border-bottom: 2px solid var(--color-theme); 
 }
 
 #navbar {
-    color: #2E2E2E;
+    color: var(--color-text-dark);
 }
 
 #navbar a {
-    color: #2E2E2E;
+    color: var(--color-text-dark);
 }
 
 #navbar a:hover {
     background-color: white;
-    color: #6c757d;
+    color: gray;
 }
 
+/* Slideshow */
 .slideshow-category {
-    font-family: Source Sans Pro;
-    color: #119EAC;
+    font-family: var(--sans-font);
+    color: var(--color-theme);
     line-height: 0.6;
     font-size: smaller;
     font-weight: bold;
 }
 
 .slideshow-title {
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 1.5rem;
     color: white;
 }
@@ -47,22 +55,67 @@ li .active {
     background: rgba(18, 18, 18, 0.7);
 }
 
+/* Posts */
 .home-post-category {
-    font-family: source sans pro;
+    font-family: var(--sans-font);
     font-weight: bold;
     font-size: smaller;
-    color: #119EAC;
+    color: var(--color-theme);
 }
 .home-post-date { 
     font-size: smaller;
 }
 
+/* Social footer */
 .instagram-icon {
     max-height: 1.5rem;
+    vertical-align: text-top;
 }
 
+#instagram-container {
+    background: whitesmoke;
+}
+
+#email-input {
+    font-family: var(--sans-font);
+}
+
+.btn-subscribe {
+    font-family: var(--sans-font);
+    border-radius: 20px;
+}
+
+/* Site-map footer */
 footer {
-    background-color: #2e2e2e;
+    background-color: #292929;
+}
+
+#footer-siteid {
+    font-family: var(--serif-font);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+footer h4, footer h5, footer h6, footer p {
+    color: white;
+    font-weight: 100;
+    font-family: var(--sans-font);
+    font-size: medium;
+}
+
+footer .d-md-block h4 {
+    /* font-size: larger; */
+    color: var(--color-theme);
+    margin-bottom: 1.2rem;
+}
+
+footer p {
+    padding-left: 1rem;
+}
+
+footer h5 {
+    color: gray;
 }
 
 footer li {

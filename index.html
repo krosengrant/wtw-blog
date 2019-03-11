@@ -13,9 +13,12 @@
     <!-- Adobe Fonts (for Adobe Caslon Pro) -->
     <link rel="stylesheet" href="https://use.typekit.net/yzw5hvn.css">
 
-    <!-- My custom CSS & JS -->
+    <!-- Google Fonts (for Source Sans Pro) -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    
 </head>
 <body>
     <!-- Nav bar -->
@@ -193,10 +196,21 @@
     </div>
 
     <!-- Instagram -->
-    <div class="container">
+    <div class="container-fluid p-5" id="instagram-container">
         <div class="row">
-            <div class="col-md-6 pb-4">
-                <h5><span><img src="icons/instagram.png" alt="Instagram" class="d-inline instagram-icon pr-2"></span>Instagram</h5>
+            <div class="col-md-4 my-auto mx-auto">
+                <form>
+                    <div class="form-group">
+                        <h2>Stay up to date</h2>
+                        <h6>Get notified whenever a new adventure is posted.</h6>
+                        <label for="email-input"></label>
+                        <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                        <button type="submit" class="btn btn-sm btn-outline-dark btn-subscribe mb-5">Subscribe</button>
+                </form>
+            </div>
+            <div class="col-md-4 m-auto">
+                <h5><img src="icons/instagram.png" alt="Instagram" class="d-inline instagram-icon pr-2">Instagram</h5>
                 <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
                 <iframe src="http://lightwidget.com/widgets/1c93357bd95d59b1bc3bea98dc3f08a5.html" scrolling="no"
                     allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
@@ -205,16 +219,46 @@
     </div>
 
     <!-- Footer -->
-    <footer class="p-2">
-        <ul class="py-2">
-            <li class="py-2">Home</li>
-            <li class="py-2">About</li>
-            <li class="py-2">Contact</li>
-        </ul>
+    <footer>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md">
+                    <h4 id="footer-siteid">A Way to Wander</h4>
+                    <h4>About</h4>
+                    <h4>Contact</h4>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <h4>Traveling</h4>
+                    <h5>Europe</h5>
+                    <p>Italy</p>
+                    <h5>Asia</h5>
+                    <p>Japan</p>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <h4>Backpacking</h4>
+                    <h5>California</h5>
+                    <p>Inyo National Forest</p>
+                    <p>Los Padres National Forest</p>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <h4>Climbing</h4>
+                    <h5>Indoor</h5>
+                    <p>Los Angeles</p>
+                    <p>Bay Area</p>
+                    <h5>Outdoor</h5>
+                    <p>Joshua Tree</p>
+                    <p>San Diego</p>
+                </div>
+                <div class="col-md d-none d-md-block">
+                    <h4>Hiking</h4>
+                    <h5>California</h5>
+                    <p>San Bernadino National Forest</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-
-    <!-- Bootstrap JS (at end of body to speed up page load time-->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -224,5 +268,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
 </body>
 </html>
